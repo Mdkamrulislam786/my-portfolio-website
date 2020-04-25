@@ -1,0 +1,275 @@
+/* Large device */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .logo{
+    height: 90px;
+    width: 200px;
+  }
+  .navbar{
+    background-color: rgba(0,0,0,0.7);
+  }
+  .navbar-nav{
+    float: left;
+  }
+  .header-content h1{
+    font-size: 50px;
+  }
+  .header p{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .learning-logo{
+   height: 100px;
+   width: 110px;
+  }
+  .testimonial blockquote::before {
+    content: "\201C";
+    top: 90px;
+    left: 95px;
+
+}
+
+.testimonial blockquote::after {
+    content: "\201D";
+    bottom: 80px;
+    right: 90px;
+
+}
+
+
+}
+  
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .navbar{
+    background-color: rgba(0,0,0,0.7);
+  }
+  .navbar-nav{
+    float: left;
+  }
+  .header-content h1{
+    font-size: 40px;
+  }
+  .header p{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .learning-logo{
+   height: 80px;
+   width: 66px;
+  }
+  .testimonial blockquote::before {
+    content: "\201C";
+    top: 90px;
+    left: 95px;
+
+}
+
+.testimonial blockquote::after {
+    content: "\201D";
+    bottom: 80px;
+    right: 90px;
+
+}
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* HOME SECTION */
+  .navbar{
+    background-color: rgba(0,0,0,0.9);
+  }
+
+.logo{
+  height: 20px !important;
+  width: 20px !important;
+}
+a.navbar-brand{
+  width: 100px !important;
+}
+  .navbar-nav{
+    float: left;
+  }
+  p{
+    font-size: 16px;
+  }
+.header {
+    vertical-align: center;
+    display: table;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+.header-content {
+  display: block;
+  align-items: center;
+  text-align: left;
+  padding-top: 30px;
+  margin: 30px 0px 0px 0px;
+}
+.header-content h1{
+  position: relative;
+  font-size: 30px;
+  bottom: 10px;
+}
+.header-content p{
+position: absolute;
+font-size: 16px;
+font-weight: 300;
+display: block;
+align-items: center;
+text-align: left;
+width: 90%;
+}
+.header h2{
+  font-size: 22px;
+  color: #33dee5;
+}
+.logo{
+  height: 80px !important;
+  width: 150px !important;
+}
+.learning-logo{
+  height: 60px;
+  width: 40px;
+ }
+.home-btn {
+  position: relative;
+  top:115px;
+}
+.home-btn >button{
+  display: flex !important;
+  flex-direction: column !important;
+
+}
+/*NAVBAR*/
+/* .navbar-toggler-icon{
+  position: absolute !important;
+  top: 1rem !important;
+  right: 1rem;
+} */
+.navbar{
+    min-height: .5rem;
+    padding: 0px 10px !important;
+    transition: all .5s ease-in-out;
+} 
+ .my-btn{
+padding: 5px;
+margin: 2px auto;
+}  
+
+.small-icon{
+  position: relative;
+  top: 115px;
+  display: flex;
+  padding: 0px !important;
+  margin-top: 5px;
+}
+.small-icon i{
+  display: flex;
+  height: 5px;
+}
+/*PROJECT SECTION*/
+.middle .text{
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+/*SKILLS*/
+.project-content{
+  padding-top: 60px !important;
+}
+.project-content h2{
+  font-size: 30px;
+
+}
+.project-content .my-btn{
+  margin-bottom: 20px;
+
+}
+#player2,#player{
+  box-shadow: none;
+}
+/*learnning*/
+#learning{
+  margin-bottom: -30px;
+}
+.logo{
+  height: 50px;
+  width: 40px;
+}
+#skills p{
+  font-size: 16px;
+  font-weight: 300;
+}
+#learning h2{
+  font-size: 26px;
+}
+#learning h3{
+  font-size: 30px;
+}
+/*TESTIMONIALS*/
+#testimonials h3{
+  font-size: 26px;
+  padding-top: 30px;
+}
+.content-title h3{
+  font-size: 30px;
+}
+
+/*TESTIMONIALS*/
+.testimonial blockquote p {
+ text-align: center;
+ padding: 20px 0px;
+}
+.testimonial blockquote::before {
+  display: none;
+
+}
+
+.testimonial blockquote::after {
+  display: none;
+
+}
+.about-wrapper h2,h3{
+  font-size: 22px;
+}
+.about-wrapper p{
+  font-size: 16px;
+}
+}
