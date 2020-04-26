@@ -26,37 +26,28 @@ const form = document.getElementById("form");
 const error_message = document.getElementById("error_message");
 
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    
+  e.preventDefault();
 
-    let message;
-    if(  name.value.length < 3){
-        message= "Insert at least 3 char!"
-        error_message.style.padding = "10px";
-        error_message.innerText= message
-        return false
-    }
-    return true
- 
-}); 
+  let message;
+  if (name.value.length < 3) {
+    message = "Insert at least 3 char!";
+    error_message.style.padding = "10px";
+    error_message.innerText = message;
+    return false;
+  }
+  return true;
+});
 
 //JQUERY SECTION
-$("body").scrollspy({
-  target: "#vesco-menu",
-});
-
-$('[data-spy="scroll"]').each(function () {
-  var $spy = $(this).scrollspy("refresh");
-});
 
 $(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() < 50) {
       $("nav").removeClass("vesco-nav");
-      $(".back-to-top").fadeOut();
+      // $(".back-to-top").fadeOut();
     } else {
       $("nav").addClass("vesco-nav");
-      $(".back-to-top").fadeIn();
+      // $(".back-to-top").fadeIn();
     }
   });
 });
@@ -92,6 +83,15 @@ $(document).ready(function () {
 //    }
 //  });
 
-$(function(){
+$(function () {
   new WOW().init();
+});
+
+
+$('body').scrollspy({
+  target: '#vesco-menu'
+})
+
+$('[data-spy="scroll"]').each(function () {
+  var $spy = $(this).scrollspy('refresh')
 })
