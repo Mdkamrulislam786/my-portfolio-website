@@ -1,12 +1,17 @@
 /* Large device */
-@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {}
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+  .learning-logo {
+    height: 100px;
+    width: 200px !important;
+  }
+}
 
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {}
+@media (min-width: 1024px) and (max-width: 1280px) {}
 
 /* 
   ##Device = Tablets, Ipads (portrait)
@@ -15,16 +20,14 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .logo {
-    height: 90px;
-    width: 200px;
+    height: 45px;
+    width: 20rem;
   }
 
   .navbar {
     background-color: rgba(0, 0, 0, 0.7);
   }
-.nav-item.nav-link{
-  font-size: 15px;
-}
+
 
   .navbar-nav {
     float: left;
@@ -40,8 +43,8 @@
   }
 
   .learning-logo {
-    height: 100px;
-    width: 110px;
+    height: 80px;
+    width: 100px;
   }
 
   .testimonial blockquote::before {
@@ -57,6 +60,11 @@
     right: 90px;
 
   }
+  .learning-logo {
+    height: 70px;
+    width: 150px !important;
+  }
+
 
 
 }
@@ -166,13 +174,15 @@
   }
 
   .logo {
-    height: 80px !important;
-    width: 150px !important;
+    height: 40px !important;
+    width: 10rem !important;
+    padding-left: 10px;
   }
 
   .learning-logo {
     height: 60px;
-    width: 40px;
+    width: 50px;
+    padding: 2px 2px;
   }
 
   .home-btn {

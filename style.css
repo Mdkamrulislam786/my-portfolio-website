@@ -15,12 +15,14 @@ body {
 /*****NAVBAR *******
 *******************/
 .navbar{
-    min-height: 3rem;
-    padding: 0px 85px;
+    min-height: 3rem !important;
     transition: all .5s ease-in-out;
 }
+.logo{
+    padding-left: 70px;
+}
 
-.vesco-nav{
+.achievers-nav{
     background:rgba(0,0,0,0.7);
     padding: 5px 0;
 }
@@ -40,13 +42,15 @@ font-weight: 700;
 .navbar-toggler{
     background:rgba(0, 0, 0, .1);
     border: 1px solid white;
-    border-radius: 0px;
 }
 
 
-#vesco-menu .navbar-nav > a.active{
+#achievers-menu .navbar-nav > a.active{
     background: none;
     color: #34b6d3;
+}
+#achievers-menu{
+    padding-right: 85px;
 }
 
 /* 33dee5 */
@@ -54,6 +58,8 @@ p {
     color: azure;
     font-size: 18px;
     font-weight: 300;
+    font-family: 'ABeeZee', sans-serif;
+
 }
 
 /**********
@@ -123,6 +129,23 @@ HOME SECTION
     font-size: 30px;
     font-weight: 500;
     color: #34b6d3;
+}
+.header-content h1:hover{
+    animation: bounce 1s linear;
+}
+@keyframes bounce{
+    20%,50%,80%, to{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    70%{
+        transform: translateY(-35px);
+    }
+    90%{
+        transform: translateY(-4px);
+    }
 }
 
 /* .logo:hover{
@@ -226,12 +249,13 @@ BUTTON GROUPS
 .my-video {
     border: 2px 0px solid aquamarine;
     border-radius: 10%;
-    box-shadow: 10px 7px 10px 10px rgb(163, 159, 142, 0.3);
+    box-shadow: 10px 7px 10px 10px rgba(69, 94, 231, 0.3);
     height: 40%;
     width: 90%;
     margin-top: 40px;
     margin-bottom: -60px;
     margin-left: 20px;
+    z-index: 1030;
 }
 
 
@@ -345,8 +369,8 @@ h2 {
 Learning SECTION
 **************/
 #learning {
-    /* background-image: url(./Assets/Vanishing-Stripes\ \(1\).svg); */
-    background-color: rgba(0, 0, 0);
+    background-image: url(./Assets/Matrix-1s-1084px\ \(1\).svg);
+    /* background-color: rgb(15, 86, 179); */
     padding-bottom: 40px;
     margin-bottom: 20px;
     height: calc(100%-50%);

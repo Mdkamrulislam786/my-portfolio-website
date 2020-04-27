@@ -43,16 +43,38 @@ form.addEventListener("submit", (e) => {
 $(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() < 50) {
-      $("nav").removeClass("vesco-nav");
+      $("nav").removeClass("achievers-nav");
       // $(".back-to-top").fadeOut();
     } else {
-      $("nav").addClass("vesco-nav");
+      $("nav").addClass("achievers-nav");
       // $(".back-to-top").fadeIn();
     }
   });
 });
 
 //Owl-carousol
+$(document).ready(function () {
+  $(".logos").owlCarousel({
+    items: 4,
+    autoplay: true,
+    smartSpeed: 500,
+    loop: true,
+    autoplayHoverPause: true,
+    autoplayTimeout: 3000,
+    responsive:{
+      0:{
+          items:3
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:3
+      }
+  }
+  });
+});
+
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     items: 1,
@@ -63,6 +85,7 @@ $(document).ready(function () {
     autoplayTimeout: 3000,
   });
 });
+
 //   $(document).ready(function(){
 //     $(".logos").owlCarousel({
 //         items: 3,
