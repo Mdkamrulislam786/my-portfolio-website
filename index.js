@@ -53,27 +53,27 @@ $(function () {
 });
 
 //Owl-carousol
-$(document).ready(function () {
-  $(".logos").owlCarousel({
-    items: 4,
-    autoplay: true,
-    smartSpeed: 500,
-    loop: true,
-    autoplayHoverPause: true,
-    autoplayTimeout: 3000,
-    responsive:{
-      0:{
-          items:3
-      },
-      600:{
-          items:3
-      },
-      1000:{
-          items:3
-      }
-  }
-  });
-});
+// $(document).ready(function () {
+//   $(".logos").owlCarousel({
+//     items: 4,
+//     autoplay: true,
+//     smartSpeed: 500,
+//     loop: true,
+//     autoplayHoverPause: true,
+//     autoplayTimeout: 3000,
+//     responsive:{
+//       0:{
+//           items:3
+//       },
+//       600:{
+//           items:3
+//       },
+//       1000:{
+//           items:3
+//       }
+//   }
+//   });
+// });
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
@@ -82,6 +82,7 @@ $(document).ready(function () {
     smartSpeed: 500,
     loop: true,
     autoplayHoverPause: true,
+    lazyLoad:true,
     autoplayTimeout: 3000,
   });
 });
