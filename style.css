@@ -9,6 +9,7 @@ body {
 }
 
 body {
+    background-color: #000;
     position: relative;
 }
 
@@ -79,7 +80,7 @@ CONTENT-BOX GENERIC CLASSES
     font-weight: 700px;
     text-align: center;
     margin-top: 10px;
-    color: black;
+    color: #fff;
 
 }
 
@@ -97,7 +98,7 @@ HOME SECTION
 **************/
 #home {
     height: 100%;
-    background-image: url(./Assets/Vanishing-Stripes\ \(1\).svg);
+    background-image: url(./Assets/wave-1s-1084px.svg);
 }
 
 .bg-parallex {
@@ -268,7 +269,7 @@ PROJECT SECTION
 }
 
 .project-wrapper {
-    background-image: url(./Assets/Vanishing-Stripes\ \(1\).svg);
+    /* background-image: url(./Assets/Vanishing-Stripes\ \(1\).svg); */
     text-align: center;
     padding-bottom: 20px;
 }
@@ -353,16 +354,20 @@ PROJECT SECTION
 OTHERSKILLS SECTION
 **************/
 .skills-wrapper {
-    background-image: url(./Assets/Vanishing-Stripes\ \(1\).svg);
+    /* background-image: url(./Assets/Vanishing-Stripes\ \(1\).svg); */
     height: 100%;
 }
 
 h2 {
     font-size: 35px;
     font-weight: 700;
-    color: #17cc35;
+    color: #34b6d3;
     margin: 10px auto;
 
+}
+
+#skills p{
+    color: #fff;
 }
 
 /**************
@@ -372,7 +377,8 @@ Learning SECTION
     background-image: url(./Assets/Matrix-1s-1084px\ \(1\).svg);
     /* background-color: rgb(15, 86, 179); */
     padding-bottom: 40px;
-    margin-bottom: 20px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     height: calc(100%-50%);
     z-index: -100;
     border-bottom-color: 2px solid #fff;
@@ -384,8 +390,8 @@ Learning SECTION
 }
 
 .learning-logo {
-    height: 80px !important;
-    width: 80px !important;
+    height: 80px;
+    width: 80px;
     /* padding: 3px 0px;
     margin: 10px 10px 10px 0px; */
 
@@ -414,7 +420,7 @@ Learning SECTION
     font-weight: 700px;
     text-align: center;
     margin-top: 10px;
-    color: #17cc35;
+    color: #34b6d3;
     margin: 10px 0px;
     text-align: start;
 }
@@ -426,13 +432,14 @@ TESTIMONIALS SECTION
     background-image: url(./assets/bg-testimonials.jpg);
 }
 
-#testimonial-cover {
+/* #testimonial-cover {
     clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% calc(100% - 90%));
     margin-top: -70px;
-}
+} */
 
 .testi-content-box {
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .content-title-white h3 {
@@ -503,23 +510,26 @@ TESTIMONIALS SECTION
 
 
 /**************
-ABOUT ME SECTION
+FOOTER
 **************/
 .contact-content-box {
     padding-top: 30px;
     padding-bottom: -20px;
 }
 
-.about-wrapper {
-    background-image: url(./Assets/Vanishing-Stripes\ \(1\).svg);
-}
+/* .about-wrapper {
+    background-image: url(./Assets/wave-1s-1084px.svg);
+} */
 
 .about-wrapper h2,
 h3 {
     font-size: 30px;
     font-weight: 700;
-    color: #17cc35;
+    color: #34b6d3;
     margin: 20px 0px;
+}
+.contact-info strong{
+    color: #17cc35 ;
 }
 
 .about-wrapper p {

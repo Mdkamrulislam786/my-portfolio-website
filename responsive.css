@@ -40,8 +40,8 @@
   }
 
   .learning-logo {
-    height: 80px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
   }
 
   .testimonial blockquote::before {
@@ -57,10 +57,7 @@
     right: 90px;
 
   }
-  .learning-logo {
-    height: 70px;
-    width: 150px !important;
-  }
+
 
 
 
@@ -89,10 +86,10 @@
     font-size: 20px;
     font-weight: 500;
   }
-
   .learning-logo {
-    height: 80px;
-    width: 66px;
+    height: 50px;
+    width: 55px;
+    padding: 2px 2px;
   }
 
   .testimonial blockquote::before {
@@ -177,8 +174,8 @@
   }
 
   .learning-logo {
-    height: 60px;
-    width: 50px;
+    height: 50px;
+    width: 55px;
     padding: 2px 2px;
   }
 
@@ -308,5 +305,8 @@
 
   .about-wrapper p {
     font-size: 16px;
+  }
+  .footer-bottom{
+    display: none;
   }
 }
