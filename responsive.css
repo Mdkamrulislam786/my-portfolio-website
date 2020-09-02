@@ -1,7 +1,5 @@
 /* Large device */
-@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
-
-}
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {}
 
 /* 
   ##Device = Laptops, Desktops
@@ -70,6 +68,10 @@
 */
 
 @media (min-width: 481px) and (max-width: 768px) {
+  .header-content {
+    margin-top: 100px;
+  }
+
   .navbar {
     background-color: rgba(0, 0, 0, 0.7);
   }
@@ -78,14 +80,16 @@
     float: left;
   }
 
-  .header-content h1 {
-    font-size: 40px;
+  .header-content h1,
+  h2 {
+    font-size: 30px;
   }
 
   .header p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
   }
+
   .learning-logo {
     height: 50px;
     width: 55px;
@@ -167,11 +171,18 @@
     color: #33dee5;
   }
 
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .logo {
     height: 40px !important;
     width: 10rem !important;
     padding-left: 10px;
   }
+
+
 
   .learning-logo {
     height: 50px;
@@ -306,7 +317,8 @@
   .about-wrapper p {
     font-size: 16px;
   }
-  .footer-bottom{
+
+  .footer-bottom {
     display: none;
   }
 }
