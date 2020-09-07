@@ -1,4 +1,30 @@
 //JAVASCRIPT
+//SUBMIT EMAIL
+document.querySelector("#form").addEventListener("submit", submitForm);
+function submitForm(e) {
+  e.preventDefault();
+
+  //Get input values
+  let name = document.querySelector("#name").value;
+  let email = document.querySelector("#email").value;
+  let message = document.querySelector("#message").value;
+
+  document.querySelector("#form").reset();
+  sendEmail(name, email, message);
+}
+function sendEmail(name, email, message) {
+  Email.send({
+    SecureToken: "ba0502ad-ac7d-46ea-819b-dd0cca781986 ",
+    Host: "smtp.gmail.com",
+    Username: "kamrulislam.ki01@gmail.com",
+    Password: "opqkgtuhzqkcdrrb",
+    To: "kamrulislam.ki01@gmail.com",
+    From: "kamrulislam.ki01@gmail.com",
+    Subject: `${name} has sent you a message`,
+    Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
+  }).then((_message) => alert("Mail Sent Succesfully"));
+}
+
 //Video play
 let video = document.getElementById("player");
 
@@ -17,27 +43,6 @@ function play4() {
   video1.pause();
 }
 
-//Form Validation
-
-const name = document.getElementById("name");
-const email = document.getElementById("email");
-const message = document.getElementById("message");
-const form = document.getElementById("form");
-const error_message = document.getElementById("error_message");
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  let message;
-  if (name.value.length < 3) {
-    message = "Insert at least 3 char!";
-    error_message.style.padding = "10px";
-    error_message.innerText = message;
-    return false;
-  }
-  return true;
-});
-
 //JQUERY SECTION
 
 $(function () {
@@ -52,29 +57,6 @@ $(function () {
   });
 });
 
-//Owl-carousol
-// $(document).ready(function () {
-//   $(".logos").owlCarousel({
-//     items: 4,
-//     autoplay: true,
-//     smartSpeed: 500,
-//     loop: true,
-//     autoplayHoverPause: true,
-//     autoplayTimeout: 3000,
-//     responsive:{
-//       0:{
-//           items:3
-//       },
-//       600:{
-//           items:3
-//       },
-//       1000:{
-//           items:3
-//       }
-//   }
-//   });
-// });
-
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     items: 1,
@@ -82,40 +64,41 @@ $(document).ready(function () {
     smartSpeed: 500,
     loop: true,
     autoplayHoverPause: true,
-    lazyLoad:true,
+    lazyLoad: true,
     autoplayTimeout: 3000,
   });
 });
-
-//   $(document).ready(function(){
-//     $(".logos").owlCarousel({
-//         items: 3,
-//         autoplay: true,
-//         smartSpeed: 1000,
-//         loop: true,
-//         autoplayHoverPause: true,
-//         autoplayTimeout: 3000
-//     })
-//   });
-
-// $('#play-pause-button').click(function () {
-//     var mediaVideo = $("#media-video").get(0);
-//     if (mediaVideo.paused) {
-//         mediaVideo.play();
-//     } else {
-//         mediaVideo.pause();
-//    }
-//  });
 
 $(function () {
   new WOW().init();
 });
 
-
-$('body').scrollspy({
-  target: '#vesco-menu'
-})
+$("body").scrollspy({
+  target: "#vesco-menu",
+});
 
 $('[data-spy="scroll"]').each(function () {
-  var $spy = $(this).scrollspy('refresh')
-})
+  var $spy = $(this).scrollspy("refresh");
+});
+
+
+//Form Validation
+
+// const name = document.getElementById("name");
+// const email = document.getElementById("email");
+// const message = document.getElementById("message");
+// const form = document.getElementById("form");
+// const error_message = document.getElementById("error_message");
+
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+
+//   let message;
+//   if (name.value.length < 3) {
+//     message = "Insert at least 3 char!";
+//     error_message.style.padding = "10px";
+//     error_message.innerText = message;
+//     return false;
+//   }
+//   return true;
+// });
